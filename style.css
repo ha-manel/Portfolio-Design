@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 :root {
   --primary-color: #6070ff;
+  --header-color: #172b4d;
+  --paragraph-color: #344563;
 }
 
 body {
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
+/*header section*/
 header {
   display: flex;
   justify-content: space-between;
@@ -23,7 +27,6 @@ header #logo {
   position: static;
   top: 10px;
   left: 12px;
-  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -33,4 +36,47 @@ header #logo {
 header #menu_icon {
   color: var(--primary-color);
   width: 16px;
+}
+
+/*headline section*/
+#headline {
+  background-image: url(/images/header-shapes\ mobile.png);
+  height: 100vh;
+}
+
+#headline h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  top: 114px;
+  left: 24px;
+  margin: 114px 24px 0px;
+  color: var(--header-color);
+}
+
+#headline p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--paragraph-color);
+  margin: 12px 24px;
+}
+
+#headline h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin-left: 24px;
+  margin-bottom: 12px;
+}
+
+#headline #social_media_links {
+  margin-left: 24px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#headline #social_media_links .social_media_link {
+  color: #505f79;
 }
