@@ -9,6 +9,15 @@
 
 - HTML & CSS
 
+## Getting Started
+To get a local copy up and running follow these simple example steps.
+
+### Setup
+To setup the webpage locally: click on code (dropdown list) > Download as ZIP
+
+### Deployment
+To run the project open the downloaded folder (after extraction) then run the **index.html** file 
+
 
 ## Authors
 
