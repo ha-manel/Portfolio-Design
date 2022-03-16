@@ -50,7 +50,7 @@ header #menu_icon {
   line-height: 52px;
   top: 114px;
   left: 24px;
-  margin: 114px 24px 0px;
+  margin: 114px 24px 0;
   color: var(--header-color);
 }
 
