@@ -75,6 +75,8 @@ header #menu_icon {
   width: 160px;
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 #headline #social_media_links .social_media_link {
