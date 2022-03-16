@@ -9,13 +9,16 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  background-image: url(/images/header-shapes\ mobile.png);
+  background-position: 0 104px;
+  background-repeat: no-repeat;
 }
 
 /*header section*/
 header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   margin: 26px 36px 0 24px;
 }
 
@@ -40,7 +43,6 @@ header #menu_icon {
 
 /*headline section*/
 #headline {
-  background-image: url(/images/header-shapes\ mobile.png);
   height: 100vh;
 }
 
@@ -72,7 +74,7 @@ header #menu_icon {
 
 #headline #social_media_links {
   margin-left: 24px;
-  width: 150px;
+  width: 160px;
   display: flex;
   justify-content: space-between;
 }
