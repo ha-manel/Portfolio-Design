@@ -14,7 +14,7 @@ body {
   background-repeat: no-repeat;
 }
 
-/*header section*/
+/* header section */
 header {
   display: flex;
   justify-content: space-between;
@@ -41,7 +41,7 @@ header #menu_icon {
   width: 16px;
 }
 
-/*headline section*/
+/* headline section */
 #headline {
   height: 100vh;
 }
