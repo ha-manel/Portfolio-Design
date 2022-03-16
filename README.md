@@ -12,6 +12,10 @@
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
+### Prerequisites
+- A web browser (like Google Chrome, Opera...)
+- A code editor 
+
 ### Setup
 To setup the webpage locally: click on code (dropdown list) > Download as ZIP
 
