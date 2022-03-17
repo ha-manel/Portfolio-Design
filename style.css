@@ -19,6 +19,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 26px 36px 0 24px;
+ 
 }
 
 header #logo {
@@ -41,7 +42,8 @@ header #menu_icon {
 }
 
 #headline {
-  height: 100vh;
+  height: 550px;
+  border-bottom-left-radius: 50px;
 }
 
 #headline h1 {
