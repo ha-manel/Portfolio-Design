@@ -200,7 +200,7 @@ header #menu_icon {
 .enabled_btn:hover {
   background-color: #6070ff;
   color: #fff;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 .enabled_btn:active {
@@ -222,6 +222,7 @@ header #menu_icon {
   border-top-right-radius: 80px;
   padding-bottom: 100px;
 }
+
 #about_myself h2 {
   padding: 114px 24px 0;
   font-weight: 700;
