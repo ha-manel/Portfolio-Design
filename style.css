@@ -112,6 +112,7 @@ header #menu_icon {
   margin: 88px 24px 0;
   border-radius: 16px;
   border: 1px solid #DFE1E6;
+  padding-bottom: 15px;
 }
 
 .project:nth-child(2n){
