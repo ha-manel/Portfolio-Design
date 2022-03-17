@@ -12,7 +12,7 @@ body {
   background-color: #f8f9fa;
 }
 
-#headline_page{
+#headline_page {
   width: 375px;
   margin: 0 auto;
   background-image: url(/images/header-shapes\ mobile.png);
@@ -93,7 +93,7 @@ header #menu_icon {
   text-decoration: none;
 }
 
-#works{
+#works {
   width: 100%;
   display: grid;
   grid-template-columns: auto;
@@ -102,7 +102,7 @@ header #menu_icon {
   margin-top: 26px;
 }
 
-.project{
+.project {
   width: 327px;
   height: 552px;
   display: flex;
@@ -111,15 +111,15 @@ header #menu_icon {
   background-color: #fff;
   margin: 88px 24px 0;
   border-radius: 16px;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   padding-bottom: 15px;
 }
 
-.project:nth-child(2n){
+.project:nth-child(2n) {
   height: 596px;
 }
 
-.project .project_screenshot{
+.project .project_screenshot {
   width: 295px;
   height: 220px;
   border-radius: 8px;
@@ -127,7 +127,7 @@ header #menu_icon {
   margin: 16px 16px 12px;
 }
 
-.project .project_title{
+.project .project_title {
   width: 295px;
   color: var(--header-color);
   font-weight: 700;
@@ -136,7 +136,7 @@ header #menu_icon {
   margin: 0 16px;
 }
 
-.project .project_info{
+.project .project_info {
   display: flex;
   justify-content: space-between;
   width: 236px;
@@ -146,15 +146,16 @@ header #menu_icon {
   line-height: 16px;
 }
 
-.project .project_info .project_company{
+.project .project_info .project_company {
   color: var(--paragraph-color);
 }
 
-.project .project_info .project_type, .project .project_info .project_year{
-  color: #7A869A;
+.project .project_info .project_type,
+.project .project_info .project_year {
+  color: #7a869a;
 }
 
-.project .project_description{
+.project .project_description {
   width: 295px;
   height: 76px;
   font-size: 15px;
@@ -162,7 +163,7 @@ header #menu_icon {
   margin: 20px 16px 0;
 }
 
-.project .project_languages{
+.project .project_languages {
   width: 203px;
   display: flex;
   justify-content: space-between;
@@ -171,74 +172,74 @@ header #menu_icon {
   padding: 0;
 }
 
-.project .project_languages .language{
+.project .project_languages .language {
   font-size: 12px;
   line-height: 16px;
   color: var(--primary-color);
   padding: 4px 12px;
-  background-color: #EBEBFF;
+  background-color: #ebebff;
   border-radius: 8px;
 }
 
-.enabled_btn{
+.enabled_btn {
   cursor: pointer;
   font-family: inherit;
   font-size: 17px;
   font-weight: 500;
   letter-spacing: 0.03em;
-  color: #396DF2;
+  color: #396df2;
   padding: 12px;
   background-color: #fff;
-  border: 1px solid #7F8CFF;
+  border: 1px solid #7f8cff;
   box-sizing: border-box;
   border-radius: 8px;
   align-self: flex-start;
   margin: 24px 0 0 16px;
 }
 
-.enabled_btn:hover{
-  background-color: #6070FF;
+.enabled_btn:hover {
+  background-color: #6070ff;
   color: #fff;
   box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
 }
 
-.enabled_btn:active{
-  background-color: #2230D2;
+.enabled_btn:active {
+  background-color: #2230d2;
   color: #fff;
 }
 
-.enabled_btn:disabled{
+.enabled_btn:disabled {
   cursor: default;
   background-color: #fff;
-  color: #5E6C84;
-  border: 1px solid #5E6C84;
+  color: #5e6c84;
+  border: 1px solid #5e6c84;
 }
 
-#about_myself{
+#about_myself {
   width: 375px;
   margin: 114px auto;
   background-color: #fff;
   border-top-right-radius: 80px;
   padding-bottom: 100px;
 }
- #about_myself h2{
-   padding: 114px 24px 0;
-   font-weight: 700;
-   font-size: 40px;
-   line-height: 52px;
-   color: var(--header-color);
- }
+#about_myself h2 {
+  padding: 114px 24px 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--header-color);
+}
 
- #about_myself p{
-   width: 327px;
-   height: 144px;
-   padding: 0 24px;
-   font-size: 16px;
-   line-height: 24px;
-   color: var(--paragraph-color);
- }
+#about_myself p {
+  width: 327px;
+  height: 144px;
+  padding: 0 24px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--paragraph-color);
+}
 
-#about_myself #skills{
+#about_myself #skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -246,7 +247,7 @@ header #menu_icon {
   padding-left: 0;
 }
 
-#about_myself #skills .skill{
+#about_myself #skills .skill {
   width: 327px;
   list-style-type: none;
   display: flex;
@@ -255,6 +256,6 @@ header #menu_icon {
   font-size: 20px;
   line-height: 24px;
   padding: 23px 42px 23px 12px;
-  border-bottom: 1px solid #DFE1E6;
+  border-bottom: 1px solid #dfe1e6;
   box-sizing: border-box;
 }
