@@ -9,17 +9,23 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  background-color: #E5E5E5;
+}
+
+#headline_page{
+  margin-top: 0;
   background-image: url(/images/header-shapes\ mobile.png);
-  background-position: 0 104px;
+  background-position: 0 74px;
   background-repeat: no-repeat;
+  border-bottom-left-radius: 80px;
+  background-color: #fff;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 26px 36px 0 24px;
- 
+  padding: 26px 36px 0 24px;
 }
 
 header #logo {
