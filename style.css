@@ -260,3 +260,8 @@ header #menu_icon {
   border-bottom: 1px solid #dfe1e6;
   box-sizing: border-box;
 }
+#form-section {
+  background: #6070FF url("images/form-background.svg");;
+  background-size: cover;
+  border-top-left-radius: 80px;
+}
