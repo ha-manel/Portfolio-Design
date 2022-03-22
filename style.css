@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
   --primary-color: #6070ff;
@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #f8f9fa;
 }
 
@@ -260,8 +260,9 @@ header #menu_icon {
   border-bottom: 1px solid #dfe1e6;
   box-sizing: border-box;
 }
+
 #form-section {
-  background: #6070ff url("./images/form-background.svg") 100%   21px no-repeat;
+  background: #6070ff url('./images/form-background.svg') 100% 21px no-repeat;
   border-top-left-radius: 80px;
   width: 375px;
   display: flex;
@@ -270,6 +271,7 @@ header #menu_icon {
   align-items: center;
   margin: 0 auto;
 }
+
 .contact-header {
   font-size: 40px;
   font-weight: 700;
@@ -277,11 +279,12 @@ header #menu_icon {
   margin-bottom: 0;
   margin-top: 103px;
 }
+
 .contact-description {
   margin-top: 12px;
   color: #ebebff;
   font-size: 20px;
-  font-weight: 327px327px 400;
+  font-weight: 400;
   line-height: 28px;
   text-align: center;
   width: 327px;
@@ -291,6 +294,7 @@ header #menu_icon {
   width: 327px;
   margin-bottom: 45px;
 }
+
 .form-input {
   outline: none;
   width: 100%;
@@ -323,9 +327,8 @@ header #menu_icon {
   font-size: 17px;
   font-weight: 500;
   border-radius: 8px;
-  padding: 12px, 16px, 12px, 16px;
+  padding: 12px 16px 12px 16px;
 }
-
 
 .submit-button:hover {
   background-color: #6070ff;
@@ -344,4 +347,3 @@ header #menu_icon {
   color: #5e6c84;
   border: 1px solid #5e6c84;
 }
-
