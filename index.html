@@ -152,14 +152,16 @@
   </section>
 
   <section id="form-section">
-    <h2>Contact me</h2>
-    <p>If you have an application you are interested in developing, a feature that you need built or a project that
+    <h2 class="contact-header">Contact me</h2>
+    <p class="contact-description">If you have an application you are interested in developing, a feature that you need
+      built or a project that
       needs coding. I’d love to help with it </p>
-    <form action="https://formspree.io/f/mzbovqzn" method="POST">
-      <input type="text" name="name" id="name" placeholder="Name" maxlength="30" required>
-      <input type="email" name="email" id="email" placeholder="E-mail" required>
+    <form action="https://formspree.io/f/mzbovqzn" method="POST" class="contact-form">
+      <input type="text" name="name" id="name" placeholder="Name" maxlength="30" required class="form-input">
+      <input type="email" name="email" id="email" placeholder="E-mail" required class="form-input">
       <textarea name="message" id="message" cols="30" rows="10" maxlength="500" placeholder="Write your message here"
         required></textarea>
+      <input type="submit" value="Get It Touch" class="submit-button">
     </form>
   </section>
 </body>
