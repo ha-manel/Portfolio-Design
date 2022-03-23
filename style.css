@@ -43,6 +43,10 @@ header {
   width: 16px;
 }
 
+#nav-links {
+  display: none;
+}
+
 #headline {
   height: 550px;
   border-bottom-left-radius: 50px;
@@ -86,7 +90,7 @@ header {
 }
 
 #works {
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto;
@@ -224,6 +228,9 @@ header {
   flex-direction: column;
   align-items: center;
   margin-top: 48px;
+}
+
+#skills ul {
   padding-left: 0;
 }
 
@@ -364,4 +371,215 @@ header {
   background-color: #fff;
   color: #5e6c84;
   border: 1px solid #5e6c84;
+}
+
+@media only screen and (min-width: 768px) {
+  #menu_icon {
+    display: none;
+  }
+
+  #nav-links {
+    display: flex;
+    width: 235px;
+    justify-content: space-between;
+  }
+
+  .nav-link {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .nav-link a {
+    text-decoration: none;
+    color: #344563;
+  }
+
+  header {
+    width: 79%;
+  }
+
+  #headline_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 916px;
+    background: #fff url(./images/header-bg-desktop.png) 100% 118px no-repeat;
+    background-size: contain;
+    border-bottom-left-radius: 150px;
+  }
+
+  #headline {
+    width: 64%;
+    margin-top: 258px;
+  }
+
+  #headline .header {
+    font-size: 48px;
+    line-height: 60px;
+    margin-top: 0;
+  }
+
+  .portfolio-description {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .lets_connect {
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+  #works {
+    align-items: center;
+  }
+
+  .project {
+    width: 80vw;
+    height: fit-content;
+    padding: 24px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .project:nth-child(2n) {
+    height: fit-content;
+    flex-direction: row-reverse;
+  }
+
+  .project_screenshot {
+    width: 47%;
+    height: auto;
+    margin: 0;
+  }
+
+  .project-div {
+    margin: 48px 46px 0;
+    width: 45%;
+    box-sizing: border-box;
+  }
+
+  .project_title {
+    font-size: 40px;
+  }
+
+  .project_info {
+    font-size: 18px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .project_info img {
+    margin: 0 12px;
+  }
+
+  .project_description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .enabled_btn {
+    margin-top: 40px;
+  }
+
+  #about_myself {
+    width: 100%;
+    display: flex;
+    border-top-right-radius: 150px;
+  }
+
+  #intro {
+    width: 31%;
+    margin: 10% 0 0 10%;
+  }
+
+  #intro .header {
+    font-size: 40px;
+    line-height: 52px;
+    padding-top: 0;
+  }
+
+  #intro .portfolio-description {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 12px 0 12px 24px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #intro .lets_connect {
+    margin-top: 12px;
+  }
+
+  #intro .social_media_links {
+    margin-bottom: 0;
+  }
+
+  #intro .enabled_btn {
+    margin-top: 34px;
+  }
+
+  #skills {
+    width: 47.5%;
+    margin: 143px 0 0 37px;
+    align-items: flex-start;
+  }
+
+  #skills ul {
+    width: 100%;
+  }
+
+  .skill {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .skill-languages {
+    flex-direction: row;
+  }
+
+  .skill-languages .language {
+    width: 122px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 12px;
+  }
+
+  .skill-languages .language img {
+    margin-bottom: 16px;
+  }
+
+  #form-section {
+    width: 100%;
+    background: #6070ff url(./images/contact-form-background.png) 100% 79px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-left-radius: 150px;
+  }
+
+  .contact-header {
+    margin-top: 142px;
+  }
+
+  .contact-description {
+    width: 39.5%;
+  }
+
+  #contact-form {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 127px;
+  }
+
+  .form-input {
+    border-radius: 2px;
+  }
 }
