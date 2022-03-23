@@ -437,7 +437,7 @@ header {
 
   .project {
     width: 80vw;
-    height: fit-content;
+    height: auto;
     padding: 24px;
     flex-direction: row;
     justify-content: flex-start;
@@ -445,7 +445,7 @@ header {
   }
 
   .project:nth-child(2n) {
-    height: fit-content;
+    height: auto;
     flex-direction: row-reverse;
   }
 
