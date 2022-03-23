@@ -7,7 +7,7 @@
 
 ## Built With
 
-- HTML & CSS
+- HTML & CSS.
 
 ## Getting Started
 
@@ -15,16 +15,16 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- A web browser (like Google Chrome, Opera...)
-- A code editor
+- A web browser (like Google Chrome, Opera...).
+- A code editor (like Atom, VScode...).
 
 ### Setup
 
-To setup the webpage locally: click on code (dropdown list) > Download as ZIP
+To setup the webpage locally: click on code (dropdown list) > Download as ZIP.
 
 ### Deployment
 
-To run the project open the downloaded folder (after extraction) then run the **index.html** file
+To run the project open the downloaded folder (after extraction) then run the **index.html** file.
 
 ## Authors
 
