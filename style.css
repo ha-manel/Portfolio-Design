@@ -15,9 +15,7 @@ body {
 #headline_page {
   width: 375px;
   margin: 0 auto;
-  background-image: url(./images/header-shapes-mobile.png);
-  background-position: 0 74px;
-  background-repeat: no-repeat;
+  background: url(./images/header-shapes-mobile.png) 0 74px no-repeat;
   border-bottom-left-radius: 80px;
   background-color: #fff;
 }
@@ -29,21 +27,18 @@ header {
   padding: 26px 36px 0 24px;
 }
 
-header #logo {
+#logo {
   outline: none;
   text-decoration: none;
   width: 76px;
   height: 20px;
-  position: static;
-  top: 10px;
-  left: 12px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 20px;
   color: var(--primary-color);
 }
 
-header #menu_icon {
+#menu_icon {
+  cursor: pointer;
   color: var(--primary-color);
   width: 16px;
 }
@@ -53,17 +48,15 @@ header #menu_icon {
   border-bottom-left-radius: 50px;
 }
 
-#headline h1 {
+.header {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  top: 114px;
-  left: 24px;
   margin: 114px 24px 0;
   color: var(--header-color);
 }
 
-#headline p {
+.portfolio-description {
   font-size: 16px;
   line-height: 24px;
   color: var(--paragraph-color);
@@ -73,7 +66,6 @@ header #menu_icon {
 .lets_connect {
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   color: #7f8cff;
   margin-left: 24px;
   margin-bottom: 12px;
@@ -81,14 +73,14 @@ header #menu_icon {
 
 .social_media_links {
   margin-left: 24px;
+  padding-left: 0;
   width: 160px;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  padding-left: 0;
 }
 
-.social_media_links .social_media_link {
+.social_media_link {
   color: #505f79;
   text-decoration: none;
 }
@@ -119,7 +111,7 @@ header #menu_icon {
   height: 596px;
 }
 
-.project .project_screenshot {
+.project_screenshot {
   width: 295px;
   height: 220px;
   border-radius: 8px;
@@ -127,7 +119,7 @@ header #menu_icon {
   margin: 16px 16px 12px;
 }
 
-.project .project_title {
+.project_title {
   width: 295px;
   color: var(--header-color);
   font-weight: 700;
@@ -136,26 +128,25 @@ header #menu_icon {
   margin: 0 16px;
 }
 
-.project .project_info {
+.project_info {
   display: flex;
   justify-content: space-between;
   width: 236px;
   margin: 20px 75px 0 16px;
   font-weight: 600;
   font-size: 13px;
-  line-height: 16px;
 }
 
-.project .project_info .project_company {
+.project_company {
   color: var(--paragraph-color);
 }
 
-.project .project_info .project_type,
-.project .project_info .project_year {
+.project_type,
+.project_year {
   color: #7a869a;
 }
 
-.project .project_description {
+.project_description {
   width: 295px;
   height: 76px;
   font-size: 15px;
@@ -163,7 +154,7 @@ header #menu_icon {
   margin: 20px 16px 0;
 }
 
-.project .project_languages {
+.project_languages {
   width: 203px;
   display: flex;
   justify-content: space-between;
@@ -172,7 +163,7 @@ header #menu_icon {
   padding: 0;
 }
 
-.project .project_languages .language {
+.language {
   font-size: 12px;
   line-height: 16px;
   color: var(--primary-color);
@@ -223,24 +214,12 @@ header #menu_icon {
   padding-bottom: 100px;
 }
 
-#about_myself h2 {
-  padding: 114px 24px 0;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  color: var(--header-color);
+#about_myself .header {
+  margin-top: 0;
+  padding-top: 114px;
 }
 
-#about_myself p {
-  width: 327px;
-  height: 144px;
-  padding: 0 24px;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--paragraph-color);
-}
-
-#about_myself #skills {
+#skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,14 +227,13 @@ header #menu_icon {
   padding-left: 0;
 }
 
-#about_myself #skills .skill {
+.skill {
   width: 327px;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
   padding: 23px 42px 23px 12px;
   border-bottom: 1px solid #dfe1e6;
   box-sizing: border-box;
@@ -290,7 +268,7 @@ header #menu_icon {
   width: 327px;
 }
 
-.contact-form {
+#contact-form {
   width: 327px;
   margin-bottom: 45px;
 }
@@ -306,18 +284,21 @@ header #menu_icon {
   border: 1px solid #cfd8dc;
   margin-bottom: 20px;
   height: 48px;
-  padding-left: 16px;
+  padding: 0 16px;
   box-sizing: border-box;
 }
 
-.contact-form textarea {
+#message {
+  resize: none;
+  font-family: inherit;
   height: 170px;
-  padding-top: 15px;
+  padding: 15px 16px;
   font-size: 15px;
+  line-height: 24px;
   color: #b3bac5;
 }
 
-.submit-button {
+#submit-button {
   width: 140px;
   height: 48px;
   cursor: pointer;
@@ -330,18 +311,18 @@ header #menu_icon {
   padding: 12px 16px 12px 16px;
 }
 
-.submit-button:hover {
+#submit-button:hover {
   background-color: #6070ff;
   color: #fff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
-.submit-button:active {
+#submit-button:active {
   background-color: #2230d2;
   color: #fff;
 }
 
-.submit-button:disabled {
+#submit-button:disabled {
   cursor: default;
   background-color: #fff;
   color: #5e6c84;
