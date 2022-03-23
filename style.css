@@ -228,6 +228,7 @@ header {
 }
 
 .skill {
+  cursor: pointer;
   width: 327px;
   list-style-type: none;
   display: flex;
@@ -237,6 +238,42 @@ header {
   padding: 23px 42px 23px 12px;
   border-bottom: 1px solid #dfe1e6;
   box-sizing: border-box;
+}
+
+#skills li:nth-of-type(1) {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+#skills li:nth-of-type(2) {
+  list-style-type: none;
+}
+
+.skill-languages {
+  margin: 24px 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-languages .language {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  width: 303px;
+  height: 67px;
+  border-radius: 8px;
+  background-color: #f7f7f9;
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #253858;
+  box-sizing: border-box;
+}
+
+.language-logo {
+  margin-right: 16px;
 }
 
 #form-section {
