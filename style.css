@@ -228,6 +228,7 @@ header {
 }
 
 .skill {
+  cursor: pointer;
   width: 327px;
   list-style-type: none;
   display: flex;
@@ -242,6 +243,10 @@ header {
 #skills li:nth-of-type(1) {
   border-bottom: none;
   padding-bottom: 0;
+}
+
+#skills li:nth-of-type(2) {
+  list-style-type: none;
 }
 
 .skill-languages {
@@ -264,6 +269,7 @@ header {
   font-size: 15px;
   font-weight: 500;
   color: #253858;
+  box-sizing: border-box;
 }
 
 .language-logo {
