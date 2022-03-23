@@ -239,6 +239,37 @@ header {
   box-sizing: border-box;
 }
 
+#skills li:nth-of-type(1) {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.skill-languages {
+  margin: 24px 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-languages .language {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  width: 303px;
+  height: 67px;
+  border-radius: 8px;
+  background-color: #f7f7f9;
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #253858;
+}
+
+.language-logo {
+  margin-right: 16px;
+}
+
 #form-section {
   background: #6070ff url('./images/form-background.svg') 100% 21px no-repeat;
   border-top-left-radius: 80px;
