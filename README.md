@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> This is the first a Microverse (@microverse) project which aims at creating a personal portfolio using a Figma template.
+> This is a Microverse (@microverse) project which aims at creating a personal portfolio using a Figma template.
 
 
 ## Built With
