@@ -35,6 +35,21 @@ header {
   font-weight: 700;
   font-size: 18px;
   color: var(--primary-color);
+  animation-name: rotateLogo;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 #menu_icon {
