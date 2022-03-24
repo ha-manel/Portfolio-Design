@@ -35,7 +35,7 @@ header {
   font-weight: 700;
   font-size: 18px;
   color: var(--primary-color);
-  animation-name: rotateLogo 1s ease-in 1s;
+  animation: rotateLogo 1s ease-in 1s;
 }
 
 @keyframes rotateLogo {
