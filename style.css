@@ -201,6 +201,7 @@ header {
   border-radius: 8px;
   align-self: flex-start;
   margin: 24px 0 0 16px;
+  transition: background-color 1s, color 1s;
 }
 
 .enabled_btn:hover {
