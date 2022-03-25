@@ -10,9 +10,10 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background-color: #f8f9fa;
+  overflow-x: hidden;
 }
 
-#headline_page {
+#headline-page {
   width: 375px;
   margin: 0 auto;
   background: url(./images/header-shapes-mobile.png) 0 74px no-repeat;
@@ -48,7 +49,7 @@ header {
   }
 }
 
-#menu_icon {
+#menu-icon {
   cursor: pointer;
   color: var(--primary-color);
   width: 16px;
@@ -78,7 +79,7 @@ header {
   margin: 12px 24px;
 }
 
-.lets_connect {
+.lets-connect {
   font-weight: 500;
   font-size: 16px;
   color: #7f8cff;
@@ -86,7 +87,7 @@ header {
   margin-bottom: 12px;
 }
 
-.social_media_links {
+.social-media-links {
   margin-left: 24px;
   padding-left: 0;
   width: 160px;
@@ -95,7 +96,7 @@ header {
   list-style-type: none;
 }
 
-.social_media_link {
+.social-media-link {
   color: #505f79;
   text-decoration: none;
 }
@@ -126,7 +127,7 @@ header {
   height: 596px;
 }
 
-.project_screenshot {
+.project-screenshot {
   width: 295px;
   height: 220px;
   border-radius: 8px;
@@ -134,7 +135,7 @@ header {
   margin: 16px 16px 12px;
 }
 
-.project_title {
+.project-title {
   width: 295px;
   color: var(--header-color);
   font-weight: 700;
@@ -143,7 +144,7 @@ header {
   margin: 0 16px;
 }
 
-.project_info {
+.project-info {
   display: flex;
   justify-content: space-between;
   width: 236px;
@@ -152,16 +153,16 @@ header {
   font-size: 13px;
 }
 
-.project_company {
+.project-company {
   color: var(--paragraph-color);
 }
 
-.project_type,
-.project_year {
+.project-type,
+.project-year {
   color: #7a869a;
 }
 
-.project_description {
+.project-description {
   width: 295px;
   height: 76px;
   font-size: 15px;
@@ -169,7 +170,7 @@ header {
   margin: 20px 16px 0;
 }
 
-.project_languages {
+.project-languages {
   width: 203px;
   display: flex;
   justify-content: space-between;
@@ -187,7 +188,7 @@ header {
   border-radius: 8px;
 }
 
-.enabled_btn {
+.enabled-btn {
   cursor: pointer;
   font-family: inherit;
   font-size: 17px;
@@ -204,25 +205,25 @@ header {
   transition: background-color 1s, color 1s;
 }
 
-.enabled_btn:hover {
+.enabled-btn:hover {
   background-color: #6070ff;
   color: #fff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
-.enabled_btn:active {
+.enabled-btn:active {
   background-color: #2230d2;
   color: #fff;
 }
 
-.enabled_btn:disabled {
+.enabled-btn:disabled {
   cursor: default;
   background-color: #fff;
   color: #5e6c84;
   border: 1px solid #5e6c84;
 }
 
-#about_myself {
+#about-myself {
   width: 375px;
   margin: 114px auto 0;
   background-color: #fff;
@@ -230,7 +231,7 @@ header {
   padding-bottom: 100px;
 }
 
-#about_myself .header {
+#about-myself .header {
   margin-top: 0;
   padding-top: 114px;
 }
@@ -386,7 +387,7 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  #menu_icon {
+  #menu-icon {
     display: none;
   }
 
@@ -411,7 +412,7 @@ header {
     width: 79%;
   }
 
-  #headline_page {
+  #headline-page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -438,7 +439,7 @@ header {
     line-height: 28px;
   }
 
-  .lets_connect {
+  .lets-connect {
     font-size: 16px;
     margin-top: 40px;
   }
@@ -461,7 +462,7 @@ header {
     flex-direction: row-reverse;
   }
 
-  .project_screenshot {
+  .project-screenshot {
     width: 47%;
     height: auto;
     margin: 0;
@@ -473,30 +474,30 @@ header {
     box-sizing: border-box;
   }
 
-  .project_title {
+  .project-title {
     font-size: 40px;
   }
 
-  .project_info {
+  .project-info {
     font-size: 18px;
     width: 100%;
     justify-content: flex-start;
   }
 
-  .project_info img {
+  .project-info img {
     margin: 0 12px;
   }
 
-  .project_description {
+  .project-description {
     font-size: 16px;
     line-height: 24px;
   }
 
-  .enabled_btn {
+  .enabled-btn {
     margin-top: 40px;
   }
 
-  #about_myself {
+  #about-myself {
     width: 100%;
     display: flex;
     border-top-right-radius: 150px;
@@ -522,15 +523,15 @@ header {
     line-height: 24px;
   }
 
-  #intro .lets_connect {
+  #intro .lets-connect {
     margin-top: 12px;
   }
 
-  #intro .social_media_links {
+  #intro .social-media-links {
     margin-bottom: 0;
   }
 
-  #intro .enabled_btn {
+  #intro .enabled-btn {
     margin-top: 34px;
   }
 
