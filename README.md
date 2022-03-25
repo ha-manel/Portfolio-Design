@@ -55,6 +55,7 @@ Give a ⭐️ if you like this project!
 
 - The website design is from [Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1)
 - Thank you [Yousef Hesham](https://github.com/yosefHesham) for contributing in the project.
+- Hat tip to Microverse's code reviewers and to everyone who reviewed my project and made suggestions.
 - Icons are from [Font Awesome](https://fontawesome.com).
 
 ## 📝 License
