@@ -303,8 +303,7 @@ header {
 }
 
 #form-section {
-  background: var(--primary-color) url('./images/form-background.svg') 100% 21px
-    no-repeat;
+  background: var(--primary-color) url('./images/form-background.svg') 100% 21px no-repeat;
   border-top-left-radius: 80px;
   width: 375px;
   display: flex;
@@ -425,8 +424,7 @@ header {
     align-items: center;
     width: 100%;
     height: 916px;
-    background: var(--white-bg-color) url(./images/header-bg-desktop.png) 100%
-      118px no-repeat;
+    background: var(--white-bg-color) url(./images/header-bg-desktop.png) 100% 118px no-repeat;
     background-size: contain;
     border-bottom-left-radius: 150px;
   }
@@ -578,9 +576,7 @@ header {
 
   #form-section {
     width: 100%;
-    background: var(--primary-color) url(./images/contact-form-background.png)
-      100% 79px;
-    background-repeat: no-repeat;
+    background: var(--primary-color) url(./images/contact-form-background.png) 100% 79px no-repeat;
     background-size: contain;
     border-top-left-radius: 150px;
   }
