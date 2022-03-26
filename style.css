@@ -4,6 +4,12 @@
   --primary-color: #6070ff;
   --header-color: #172b4d;
   --paragraph-color: #344563;
+  --white-bg-color: #fff;
+  --enabled-btn-color: #7f8cff;
+  --border-gray-color: #dfe1e6;
+  --text-soft-white-color: #ebebff;
+  --active-btn-color: #2230d2;
+  --disabled-btn-color: #5e6c84;
 }
 
 body {
@@ -18,7 +24,7 @@ body {
   margin: 0 auto;
   background: url(./images/header-shapes-mobile.png) 0 74px no-repeat;
   border-bottom-left-radius: 80px;
-  background-color: #fff;
+  background-color: var(--white-bg-color);
 }
 
 header {
@@ -82,7 +88,7 @@ header {
 .lets-connect {
   font-weight: 500;
   font-size: 16px;
-  color: #7f8cff;
+  color: var(--enabled-btn-color);
   margin-left: 24px;
   margin-bottom: 12px;
 }
@@ -116,10 +122,10 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--white-bg-color);
   margin: 88px 24px 0;
   border-radius: 16px;
-  border: 1px solid #dfe1e6;
+  border: 1px solid var(--border-gray-color);
   padding-bottom: 15px;
 }
 
@@ -184,7 +190,7 @@ header {
   line-height: 16px;
   color: var(--primary-color);
   padding: 4px 12px;
-  background-color: #ebebff;
+  background-color: var(--text-soft-white-color);
   border-radius: 8px;
 }
 
@@ -196,8 +202,8 @@ header {
   letter-spacing: 0.03em;
   color: #396df2;
   padding: 12px;
-  background-color: #fff;
-  border: 1px solid #7f8cff;
+  background-color: var(--white-bg-color);
+  border: 1px solid var(--enabled-btn-color);
   box-sizing: border-box;
   border-radius: 8px;
   align-self: flex-start;
@@ -206,27 +212,27 @@ header {
 }
 
 .enabled-btn:hover {
-  background-color: #6070ff;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--white-bg-color);
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 .enabled-btn:active {
-  background-color: #2230d2;
-  color: #fff;
+  background-color: var(--active-btn-color);
+  color: var(--white-bg-color);
 }
 
 .enabled-btn:disabled {
   cursor: default;
-  background-color: #fff;
-  color: #5e6c84;
-  border: 1px solid #5e6c84;
+  background-color: var(--white-bg-color);
+  color: var(--disabled-btn-color);
+  border: 1px solid var(--disabled-btn-color);
 }
 
 #about-myself {
   width: 375px;
   margin: 114px auto 0;
-  background-color: #fff;
+  background-color: var(--white-bg-color);
   border-top-right-radius: 80px;
   padding-bottom: 100px;
 }
@@ -256,7 +262,7 @@ header {
   font-weight: 500;
   font-size: 20px;
   padding: 23px 42px 23px 12px;
-  border-bottom: 1px solid #dfe1e6;
+  border-bottom: 1px solid var(--border-gray-color);
   box-sizing: border-box;
 }
 
@@ -297,7 +303,7 @@ header {
 }
 
 #form-section {
-  background: #6070ff url('./images/form-background.svg') 100% 21px no-repeat;
+  background: var(--primary-color) url('./images/form-background.svg') 100% 21px no-repeat;
   border-top-left-radius: 80px;
   width: 375px;
   display: flex;
@@ -310,14 +316,14 @@ header {
 .contact-header {
   font-size: 40px;
   font-weight: 700;
-  color: white;
+  color: var(--white-bg-color);
   margin-bottom: 0;
   margin-top: 103px;
 }
 
 .contact-description {
   margin-top: 12px;
-  color: #ebebff;
+  color: var(--text-soft-white-color);
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -335,8 +341,8 @@ header {
   width: 100%;
   font-size: 17px;
   font-weight: 400;
-  color: #172b4d;
-  background-color: white;
+  color: var(--header-color);
+  background-color: var(--white-bg-color);
   border-radius: 8px;
   border: 1px solid #cfd8dc;
   margin-bottom: 20px;
@@ -361,7 +367,7 @@ header {
   cursor: pointer;
   outline: none;
   border: none;
-  color: #6070ff;
+  color: var(--primary-color);
   font-size: 17px;
   font-weight: 500;
   border-radius: 8px;
@@ -369,21 +375,21 @@ header {
 }
 
 #submit-button:hover {
-  background-color: #6070ff;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--white-bg-color);
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 #submit-button:active {
-  background-color: #2230d2;
-  color: #fff;
+  background-color: var(--active-btn-color);
+  color: var(--white-bg-color);
 }
 
 #submit-button:disabled {
   cursor: default;
-  background-color: #fff;
-  color: #5e6c84;
-  border: 1px solid #5e6c84;
+  background-color: var(--white-bg-color);
+  color: var(--disabled-btn-color);
+  border: 1px solid var(--disabled-btn-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -405,7 +411,7 @@ header {
 
   .nav-link a {
     text-decoration: none;
-    color: #344563;
+    color: var(--paragraph-color);
   }
 
   header {
@@ -418,7 +424,7 @@ header {
     align-items: center;
     width: 100%;
     height: 916px;
-    background: #fff url(./images/header-bg-desktop.png) 100% 118px no-repeat;
+    background: var(--white-bg-color) url(./images/header-bg-desktop.png) 100% 118px no-repeat;
     background-size: contain;
     border-bottom-left-radius: 150px;
   }
@@ -570,8 +576,7 @@ header {
 
   #form-section {
     width: 100%;
-    background: #6070ff url(./images/contact-form-background.png) 100% 79px;
-    background-repeat: no-repeat;
+    background: var(--primary-color) url(./images/contact-form-background.png) 100% 79px no-repeat;
     background-size: contain;
     border-top-left-radius: 150px;
   }
