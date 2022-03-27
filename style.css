@@ -24,6 +24,7 @@ body {
   margin: 0 auto;
   background: var(--white-bg-color) url(./images/header-shapes-mobile.png) 0 74px no-repeat;
   border-bottom-left-radius: 80px;
+  background-color: var(--white-bg-color);
 }
 
 header {
