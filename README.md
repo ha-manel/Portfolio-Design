@@ -18,6 +18,10 @@ Build a portfolio page by recreating a [Figma](https://www.figma.com/file/l7SqJ3
 - CSS3
 - Linters (Lighthouse, Webhint, Stylelint)
 
+## Live Demo
+
+Check **Live Demo** [here.](https://ha-manel.github.io/Microverse-Portfolio/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
