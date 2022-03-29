@@ -37,7 +37,6 @@ header {
 #logo {
   width: 76px;
   height: 20px;
-  outline: none;
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
@@ -365,7 +364,6 @@ header {
   width: 140px;
   height: 48px;
   cursor: pointer;
-  outline: none;
   border: none;
   font-size: 17px;
   font-weight: 500;
