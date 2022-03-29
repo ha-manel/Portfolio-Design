@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
   --primary-color: #6070ff;
@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #f8f9fa;
   margin: 0;
   overflow-x: hidden;
@@ -22,8 +22,7 @@ body {
 #headline-page {
   width: 375px;
   margin: 0 auto;
-  background: var(--white-bg-color) url(./images/header-shapes-mobile.png) 0
-    74px no-repeat;
+  background: var(--white-bg-color) url(./images/header-shapes-mobile.png) 0 74px no-repeat;
   border-bottom-left-radius: 80px;
   background-color: var(--white-bg-color);
 }
@@ -304,8 +303,7 @@ header {
 
 #form-section {
   width: 375px;
-  background: var(--primary-color) url("./images/form-background.svg") 100% 21px
-    no-repeat;
+  background: var(--primary-color) url('./images/form-background.svg') 100% 21px no-repeat;
   border-top-left-radius: 80px;
   display: flex;
   flex-direction: column;
@@ -428,8 +426,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--white-bg-color) url(./images/header-bg-desktop.png) 100%
-      118px no-repeat;
+    background: var(--white-bg-color) url(./images/header-bg-desktop.png) 100% 118px no-repeat;
     background-size: contain;
     border-bottom-left-radius: 150px;
   }
@@ -581,8 +578,7 @@ header {
 
   #form-section {
     width: 100vw;
-    background: var(--primary-color) url(./images/contact-form-background.png)
-      100% 79px no-repeat;
+    background: var(--primary-color) url(./images/contact-form-background.png) 100% 79px no-repeat;
     background-size: contain;
     border-top-left-radius: 150px;
   }
