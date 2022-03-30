@@ -2,12 +2,12 @@
 
 # Portfolio
 
-> This is a Microverse (@microverse) project which aims at creating a personal portfolio using a Figma template.
+> This is a Microverse (@microverse) project which aims at recreating a portfolio design using a Figma template.
 
 
 ## Requirements
 
-Build a portfolio page by recreating a [Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1) template, using:
+Build a portfolio page by implementing a [Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1) template, using:
 - HTML5 and CSS3 along with best practices.
 - Linters (Lighthouse, Webhint, Stylelint).
 - CSS3 media queries for the desktop version.
