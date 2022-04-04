@@ -9,14 +9,16 @@
 
 Build a portfolio page by implementing a [Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1) template, using:
 - HTML5 and CSS3 along with best practices.
-- Linters (Lighthouse, Webhint, Stylelint).
+- Linters (Lighthouse, Webhint, Stylelint, Eslint).
 - CSS3 media queries for the desktop version.
+- JavaScript.
 
 ## Built With
 
 - HTML5
 - CSS3
-- Linters (Lighthouse, Webhint, Stylelint)
+- JavaScript
+- Linters (Lighthouse, Webhint, Stylelint, Eslint)
 
 ## Live Demo
 
@@ -60,6 +62,7 @@ Give a ⭐️ if you like this project!
 - The website design is from [Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1)
 - Thank you [Yousef Hesham](https://github.com/yosefHesham) for contributing in the project ([PR #7](https://github.com/ha-manel/Microverse-Portfolio/pull/7)).
 - Thank you [Harold Mudosa](https://github.com/haroldmud) for contributing in the project ([PR #12](https://github.com/ha-manel/Microverse-Portfolio/pull/12)).
+- Thank you [Tugsem Saranli](https://github.com/tugsem) for contributing in the project ([PR #13](https://github.com/ha-manel/Microverse-Portfolio/pull/13)).
 - Hat tip to Microverse's code reviewers and to everyone who reviewed my project and made suggestions.
 - Icons are from [Font Awesome](https://fontawesome.com).
 
