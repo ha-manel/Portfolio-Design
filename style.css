@@ -54,19 +54,93 @@ header {
   }
 }
 
-#menu-icon {
-  width: 16px;
+#hamburger {
+  display: block;
   cursor: pointer;
-  color: var(--primary-color);
 }
 
-#nav-links {
+#hamburger.active {
+  float: right;
+  margin-top: 30px;
+  margin-right: 35px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--primary-color);
+}
+
+#headline.active {
+  filter: blur(4px);
+}
+
+#hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: var(--white-bg-color);
+}
+
+#hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: var(--white-bg-color);
+}
+
+#nav-menu {
   display: none;
+}
+
+#mobile-navbar {
+  background-color: transparent;
+}
+
+#mobile-navbar.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  opacity: 0.9;
+  z-index: 99;
+}
+
+#mobile-nav-menu {
+  display: none;
+}
+
+#mobile-navbar.active #mobile-nav-menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 80px;
+  opacity: 0.9;
+}
+
+.mobile-nav-link a {
+  text-decoration: none;
+  color: var(--white-bg-color);
+  font-size: 32px;
+  font-weight: 600;
 }
 
 #headline {
   height: 550px;
   border-bottom-left-radius: 50px;
+}
+
+body.active {
+  overflow-y: hidden;
 }
 
 .header {
@@ -395,14 +469,19 @@ header {
     width: 100vw;
   }
 
-  #menu-icon {
+  #hamburger {
     display: none;
   }
 
-  #nav-links {
+  #logo {
+    margin-left: 150px;
+  }
+
+  #nav-menu {
     width: 235px;
     display: flex;
     justify-content: space-between;
+    margin-right: 164px;
   }
 
   .nav-link {
@@ -417,7 +496,9 @@ header {
   }
 
   header {
-    width: 79vw;
+    width: 100%;
+    position: fixed;
+    background-color: var(--white-bg-color);
   }
 
   #headline-page {
