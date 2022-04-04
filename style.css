@@ -19,19 +19,17 @@ body {
   overflow-x: hidden;
 }
 
-#headline-page {
-  width: 375px;
-  margin: 0 auto;
-  background: var(--white-bg-color) url(./images/header-shapes-mobile.png) 0 74px no-repeat;
-  border-bottom-left-radius: 80px;
-  background-color: var(--white-bg-color);
-}
-
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 26px 36px 0 24px;
+  padding: 20px 36px 15px 24px;
+  box-sizing: border-box;
+  background-color: var(--white-bg-color);
+  z-index: 99;
 }
 
 #logo {
@@ -99,6 +97,7 @@ header {
 
 #mobile-navbar {
   background-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
 #mobile-navbar.active {
@@ -132,11 +131,15 @@ header {
   color: var(--white-bg-color);
   font-size: 32px;
   font-weight: 600;
+  opacity: 1;
 }
 
 #headline {
-  height: 550px;
-  border-bottom-left-radius: 50px;
+  width: 375px;
+  height: 700px;
+  margin: 0 auto;
+  background: var(--white-bg-color) url(./images/header-shapes-mobile.png) 0 45px no-repeat;
+  border-bottom-left-radius: 80px;
 }
 
 body.active {
@@ -148,7 +151,7 @@ body.active {
   font-weight: 700;
   line-height: 52px;
   color: var(--header-color);
-  margin: 114px 24px 0;
+  padding: 128px 24px 0;
 }
 
 .portfolio-description {
@@ -469,6 +472,12 @@ body.active {
     width: 100vw;
   }
 
+  header {
+    width: 100%;
+    position: fixed;
+    background-color: var(--white-bg-color);
+  }
+
   #hamburger {
     display: none;
   }
@@ -495,13 +504,7 @@ body.active {
     color: var(--paragraph-color);
   }
 
-  header {
-    width: 100%;
-    position: fixed;
-    background-color: var(--white-bg-color);
-  }
-
-  #headline-page {
+  #headline {
     width: 100vw;
     height: 916px;
     display: flex;
@@ -512,9 +515,9 @@ body.active {
     border-bottom-left-radius: 150px;
   }
 
-  #headline {
-    width: 64vw;
-    margin-top: 258px;
+  #headline-content {
+    width: 63.8%;
+    margin-top: 238px;
   }
 
   #headline .header {
