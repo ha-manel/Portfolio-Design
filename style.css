@@ -75,6 +75,10 @@ header {
   background-color: var(--primary-color);
 }
 
+#headline.active {
+  filter: blur(4px);
+}
+
 #hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
@@ -106,6 +110,7 @@ header {
   height: 100%;
   background-color: var(--primary-color);
   opacity: 0.9;
+  z-index: 99;
 }
 
 #mobile-nav-menu {
@@ -132,6 +137,10 @@ header {
 #headline {
   height: 550px;
   border-bottom-left-radius: 50px;
+}
+
+body.active {
+  overflow-y: hidden;
 }
 
 .header {
