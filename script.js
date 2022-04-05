@@ -4,14 +4,13 @@ const headline = document.querySelector('#headline');
 const body = document.querySelector('body');
 const projectBtn = document.querySelectorAll('.project .enabled-btn');
 const popupOverlay = document.querySelector('#popup-overlay');
-const popupContent = document.querySelector('#popup-content');
 const closeBtn = document.querySelector('.close-btn');
 const popupHeader = document.querySelector('#popup-content h2');
-const popupImg = document.querySelector('.popup-img');
-const popupDescription = document.querySelector('.popup-description');
+const popupImg = document.querySelector('#popup-img');
+const popupDescription = document.querySelector('#popup-description');
 const liveLink = document.querySelector('.live-link');
 const sourceLink = document.querySelector('.source-link');
-const projectButtons = document.querySelector('.project-buttons');
+const skillsList = document.querySelector('#popup-skills-buttons');
 
 const projectCards = [
   {
@@ -48,10 +47,6 @@ const projectCards = [
   },
 ];
 
-const ul = document.createElement('ul');
-ul.className = 'project-languages';
-projectButtons.prepend(ul);
-
 hamburger.addEventListener('click', () => {
   headline.classList.toggle('active');
   hamburger.classList.toggle('active');
@@ -65,6 +60,10 @@ document.querySelectorAll('.mobile-nav-link').forEach((link) => link.addEventLis
   navBar.classList.remove('active');
   body.classList.remove('active');
 }));
+
+const ul = document.createElement('ul');
+ul.className = 'project-languages';
+skillsList.prepend(ul);
 
 function populatePopupWindow(index) {
   ul.innerHTML = '';
@@ -83,13 +82,11 @@ function populatePopupWindow(index) {
 
 projectBtn.forEach((btn) => btn.addEventListener('click', () => {
   popupOverlay.classList.add('active');
-  popupContent.classList.add('active');
   body.classList.add('active');
   populatePopupWindow(Array.prototype.indexOf.call(projectBtn, btn));
 }));
 
 closeBtn.addEventListener('click', () => {
   popupOverlay.classList.remove('active');
-  popupContent.classList.remove('active');
   body.classList.remove('active');
 });
