@@ -595,6 +595,8 @@ body.active {
     width: 100%;
     position: fixed;
     background-color: var(--white-bg-color);
+    padding-top: 0;
+    padding-bottom: 5px;
   }
 
   #hamburger {
