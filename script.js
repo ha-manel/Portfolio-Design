@@ -45,7 +45,7 @@ const projectCards = [
     technologies: ['html', 'css', 'javaScript', 'bootstrap'],
     'live link': 'https://ha-manel.github.io/Microverse-Portfolio/',
     'source link': 'https://github.com/ha-manel/Microverse-Portfolio',
-  }
+  },
 ];
 
 const ul = document.createElement('ul');
@@ -66,7 +66,7 @@ document.querySelectorAll('.mobile-nav-link').forEach((link) => link.addEventLis
   body.classList.remove('active');
 }));
 
-function populatePopupWindow(index){
+function populatePopupWindow(index) {
   ul.innerHTML = '';
   popupHeader.innerText = projectCards[index].name;
   popupImg.src = projectCards[index].image;
