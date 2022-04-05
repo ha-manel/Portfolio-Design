@@ -20,7 +20,7 @@ const projectCards = [
     image: './images/SnapshootPortfolio1.png',
     technologies: ['html', 'css', 'javaScript', 'github'],
     'live link': 'https://ha-manel.github.io/Microverse-Portfolio/',
-    'source link': 'https://github.com/ha-manel/Microverse-Portfolio'
+    'source link': 'https://github.com/ha-manel/Microverse-Portfolio',
   },
   {
     name: 'Multi-Post Stories',
@@ -28,7 +28,7 @@ const projectCards = [
     image: './images/SnapshootPortfolio2.png',
     technologies: ['html', 'css', 'javaScript', 'ruby'],
     'live link': 'https://ha-manel.github.io/Microverse-Portfolio/',
-    'source link': 'https://github.com/ha-manel/Microverse-Portfolio'
+    'source link': 'https://github.com/ha-manel/Microverse-Portfolio',
   },
   {
     name: 'Tonic',
@@ -36,7 +36,7 @@ const projectCards = [
     image: './images/SnapshootPortfolio3.png',
     technologies: ['html', 'css', 'javaScript'],
     'live link': 'https://ha-manel.github.io/Microverse-Portfolio/',
-    'source link': 'https://github.com/ha-manel/Microverse-Portfolio'
+    'source link': 'https://github.com/ha-manel/Microverse-Portfolio',
   },
   {
     name: 'Multi-Post Stories',
@@ -44,7 +44,7 @@ const projectCards = [
     image: './images/SnapshootPortfolio4.png',
     technologies: ['html', 'css', 'javaScript', 'bootstrap'],
     'live link': 'https://ha-manel.github.io/Microverse-Portfolio/',
-    'source link': 'https://github.com/ha-manel/Microverse-Portfolio'
+    'source link': 'https://github.com/ha-manel/Microverse-Portfolio',
   }
 ];
 
@@ -71,12 +71,12 @@ function populatePopupWindow(index){
   popupHeader.innerText = projectCards[index].name;
   popupImg.src = projectCards[index].image;
   popupDescription.innerText = projectCards[index].description;
-  for (let skill of projectCards[index].technologies) {
+  projectCards[index].technologies.forEach((skill) => {
     const li = document.createElement('li');
     li.className = 'language';
     li.innerText = skill;
     ul.appendChild(li);
-  }
+  });
   liveLink.href = projectCards[index]['live link'];
   sourceLink.href = projectCards[index]['source link'];
 }
