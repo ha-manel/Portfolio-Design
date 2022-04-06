@@ -11,8 +11,8 @@ const popupDescription = document.querySelector('#popup-description');
 const liveLink = document.querySelector('.live-link');
 const sourceLink = document.querySelector('.source-link');
 const skillsList = document.querySelector('#popup-skills-buttons');
-const form = document.querySelector("#contact-form");
-const email = document.querySelector("#email");
+const form = document.querySelector('#contact-form');
+const email = document.querySelector('#email');
 const emailErrorMsg = document.querySelector('#email-error-msg');
 
 const projectCards = [
@@ -96,10 +96,10 @@ closeBtn.addEventListener('click', () => {
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  if(email.value === email.value.toLowerCase()){
+  if (email.value === email.value.toLowerCase()) {
     form.submit();
     form.reset();
-  }else{
+  } else {
     email.classList.add('active');
     emailErrorMsg.innerText = 'Please enter the e-mail in lowercase';
   }
