@@ -319,7 +319,6 @@ body.active {
   top: 0;
   left: 0;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   background-color: rgba(193, 199, 208, 0.9);
   z-index: 2;
