@@ -39,17 +39,6 @@ header {
   font-weight: 700;
   font-size: 18px;
   color: var(--primary-color);
-  animation: rotateLogo 1s ease-in 1s;
-}
-
-@keyframes rotateLogo {
-  from {
-    transform: rotate(0);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 #hamburger {
@@ -178,6 +167,11 @@ body.active {
 .social-media-link {
   color: #505f79;
   text-decoration: none;
+}
+
+.social-media-link i:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
 
 #works {
@@ -318,10 +312,31 @@ body.active {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(193, 199, 208, 0.9);
   z-index: 2;
-  display: none;
   box-sizing: border-box;
+  background-color: transparent;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+
+#popup-overlay.active {
+  transform: scale(1);
+}
+
+#popup-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(193, 199, 208, 0.9);
+  filter: blur(4px);
+  display: none;
+  z-index: 1;
+}
+
+#popup-bg.active {
+  display: block;
 }
 
 #popup-content {
@@ -399,10 +414,6 @@ body.active {
   width: 16px;
   height: 16px;
   padding-left: 10px;
-}
-
-#popup-overlay.active {
-  display: block;
 }
 
 #popup-content .project-languages {
@@ -546,6 +557,10 @@ body.active {
   padding: 0 16px;
 }
 
+.form-input:focus {
+  box-shadow: 0 2px 8px 5px rgba(34, 48, 210, 0.5);
+}
+
 #message {
   height: 170px;
   resize: none;
@@ -584,7 +599,7 @@ body.active {
 }
 
 #submit-button:hover {
-  background-color: #0466c8;
+  background-color: #0c63e7;
   color: var(--white-bg-color);
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
@@ -830,7 +845,7 @@ body.active {
     margin: 143px 0 0 37px;
   }
 
-  #skills ul {
+  #skills > ul {
     width: 100%;
   }
 
@@ -841,6 +856,7 @@ body.active {
 
   .skill-languages {
     flex-direction: row;
+    margin-left: 20px;
   }
 
   .skill-languages .language {
@@ -849,12 +865,13 @@ body.active {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin-right: 12px;
   }
 
   .skill-languages .language img {
     margin-bottom: 16px;
+    margin-right: 0;
   }
 
   #form-section {

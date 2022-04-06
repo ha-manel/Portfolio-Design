@@ -14,12 +14,13 @@ const skillsList = document.querySelector('#popup-skills-buttons');
 const form = document.querySelector('#contact-form');
 const email = document.querySelector('#email');
 const emailErrorMsg = document.querySelector('#email-error-msg');
+const popupBg = document.querySelector('#popup-bg');
 
 const projectCards = [
   {
     name: 'Tonic',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: './images/SnapshootPortfolio1.png',
+    image: './images/SnapshootPortfolio1.svg',
     technologies: ['html', 'css', 'javaScript', 'github'],
     'live link': 'https://ha-manel.github.io/Microverse-Portfolio/',
     'source link': 'https://github.com/ha-manel/Microverse-Portfolio',
@@ -27,7 +28,7 @@ const projectCards = [
   {
     name: 'Multi-Post Stories',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: './images/SnapshootPortfolio2.png',
+    image: './images/SnapshootPortfolio2.svg',
     technologies: ['html', 'css', 'javaScript', 'ruby'],
     'live link': 'https://ha-manel.github.io/Microverse-Portfolio/',
     'source link': 'https://github.com/ha-manel/Microverse-Portfolio',
@@ -35,7 +36,7 @@ const projectCards = [
   {
     name: 'Tonic',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: './images/SnapshootPortfolio3.png',
+    image: './images/SnapshootPortfolio3.svg',
     technologies: ['html', 'css', 'javaScript'],
     'live link': 'https://ha-manel.github.io/Microverse-Portfolio/',
     'source link': 'https://github.com/ha-manel/Microverse-Portfolio',
@@ -43,7 +44,7 @@ const projectCards = [
   {
     name: 'Multi-Post Stories',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: './images/SnapshootPortfolio4.png',
+    image: './images/SnapshootPortfolio4.svg',
     technologies: ['html', 'css', 'javaScript', 'bootstrap'],
     'live link': 'https://ha-manel.github.io/Microverse-Portfolio/',
     'source link': 'https://github.com/ha-manel/Microverse-Portfolio',
@@ -86,12 +87,14 @@ function populatePopupWindow(index) {
 projectBtn.forEach((btn) => btn.addEventListener('click', () => {
   popupOverlay.classList.add('active');
   body.classList.add('active');
+  popupBg.classList.add('active');
   populatePopupWindow(Array.prototype.indexOf.call(projectBtn, btn));
 }));
 
 closeBtn.addEventListener('click', () => {
   popupOverlay.classList.remove('active');
   body.classList.remove('active');
+  popupBg.classList.remove('active');
 });
 
 form.addEventListener('submit', (event) => {
