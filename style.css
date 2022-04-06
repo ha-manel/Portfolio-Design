@@ -318,8 +318,6 @@ body.active {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  align-items: center;
   background-color: rgba(193, 199, 208, 0.9);
   z-index: 2;
   display: none;
@@ -652,7 +650,7 @@ body.active {
     color: var(--primary-color);
   }
 
-  .nav-link a:after {
+  .nav-link a::after {
     display: block;
     content: '';
     border-bottom: solid 3px var(--primary-color);
@@ -660,7 +658,7 @@ body.active {
     transition: transform 0.3s ease-in-out;
   }
 
-  .nav-link a:hover:after {
+  .nav-link a:hover::after {
     transform: scaleX(1);
   }
 
