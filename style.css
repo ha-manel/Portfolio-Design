@@ -580,10 +580,11 @@ body.active {
   color: var(--primary-color);
   border-radius: 8px;
   padding: 12px 16px 12px 16px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 #submit-button:hover {
-  background-color: var(--primary-color);
+  background-color: #0466c8;
   color: var(--white-bg-color);
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
