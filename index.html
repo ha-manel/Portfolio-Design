@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
   <script src="https://kit.fontawesome.com/1dea6ac3ad.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Manel Hammouche Portfolio</title>
 </head>
-
+ 
 <body>
   <header>
     <a href="#" id="logo">Manel</a>
@@ -33,7 +33,7 @@
       </div>
     </nav>
   </header>
-
+ 
   <section id="headline">
     <div id="headline-content">
       <h1 class="header">I'm Manel, <br> Glad to see you!</h1>
@@ -55,7 +55,7 @@
       </ul>
     </div>
   </section>
-
+ 
   <section id="works">
     <div class="project">
       <img class="project-screenshot" src="./images/SnapshootPortfolio1.png" alt="screenshot of Tonic project">
@@ -144,11 +144,13 @@
       </div>
     </div>
   </section>
-
+ 
   <section id="popup-overlay">
     <div id="popup-content">
-      <div class="close-btn">&times;</div>
-      <h2>Tonic</h2>
+      <div id="popup-title">
+        <h2></h2>
+        <div class="close-btn">&times;</div>
+      </div>
       <p class="project-info">
         <span class="project-company">CANOPY</span>
         <span><img src="./images/Counter.png" alt=" "></span>
@@ -156,27 +158,21 @@
         <span><img src="./images/Counter.png" alt=" "></span>
         <span class="project-year">2015</span>
       </p>
-      <img class="popup-img" src="./images/SnapshootPortfolio3.png" alt="Tonic's project screenshot">
-      <div class="project-skills">
-        <p class="popup-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum has been the industry's
-          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-          make
-          a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-          remaining essent</p>
-        <div>
-          <ul class="project-languages">
-            <li class="language">html</li>
-            <li class="language">css</li>
-            <li class="language">javaScript</li>
-          </ul>
-          <button class="enabled-btn">See Live <img src="./images/Icon.png" alt=" "></button>
-          <button class="enabled-btn">See Source <img src="./images/Vector.png" alt=" "></button>
+      <img id="popup-img" src="./images/SnapshootPortfolio1.png" alt="project screenshot">
+      <div id="popup-details">
+        <p id="popup-description"></p>
+        <div id="popup-skills-buttons">
+          <div id="popup-buttons">
+            <a class="enabled-btn live-link" target="_blank" rel="noopener" href="">See Live<i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a class="enabled-btn source-link" target="_blank" rel="noopener" href="">See Source<i
+                class="fa-brands fa-github"></i></a>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
+ 
   <section id="about-myself">
     <div id="intro">
       <h2 class="header">About <br> Myself</h2>
@@ -197,7 +193,7 @@
       </ul>
       <button class="enabled-btn">Get my resume</button>
     </div>
-
+ 
     <div id="skills">
       <ul>
         <li class="skill">
@@ -231,13 +227,14 @@
     <form action="https://formspree.io/f/mzbovqzn" method="POST" id="contact-form">
       <input type="text" name="name" id="name" placeholder="Name" maxlength="30" required class="form-input">
       <input type="email" name="email" id="email" placeholder="E-mail" required class="form-input">
+      <small id="email-error-msg"></small>
       <textarea name="message" id="message" cols="30" rows="10" maxlength="500" placeholder="Write your message here"
         required class="form-input"></textarea>
       <input type="submit" value="Get In Touch" id="submit-button">
     </form>
   </section>
-
+ 
   <script src="script.js"></script>
 </body>
-
+ 
 </html>
