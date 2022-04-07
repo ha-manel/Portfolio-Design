@@ -12,7 +12,10 @@ const liveLink = document.querySelector('.live-link');
 const sourceLink = document.querySelector('.source-link');
 const skillsList = document.querySelector('#popup-skills-buttons');
 const form = document.querySelector('#contact-form');
+const formInputs = document.querySelectorAll(".form-input");
+const formName = document.querySelector('#name');
 const email = document.querySelector('#email');
+const formMessage = document.querySelector('#message');
 const emailErrorMsg = document.querySelector('#email-error-msg');
 const popupBg = document.querySelector('#popup-bg');
 
@@ -107,3 +110,49 @@ form.addEventListener('submit', (event) => {
     emailErrorMsg.innerText = 'Please enter the e-mail in lowercase';
   }
 });
+
+let inputData = {};
+let storage = window.localStorage;
+
+function storageAvailable(type) {
+    let storage; 
+    try {
+        storage = window[type];
+        let x = '__storage_test__'; 
+        storage.setItem(x, x);
+        storage.removeItem(x);
+        return true;
+    }
+    catch(e) {
+        return e instanceof DOMException && (
+            e.code === 22 ||
+            e.code === 1014 ||
+            e.name === 'QuotaExceededError' ||
+            e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+            (storage && storage.length !== 0);
+    }
+}
+
+function retrieveFormData(){
+  if(storageAvailable('localStorage')) {
+    let formDataString = storage.getItem('formData');
+    let formData = JSON.parse(formDataString);
+    return formData;
+  }else {
+    return false;
+  } 
+}
+
+function populateForm () {
+  let formData = retrieveFormData();
+  if (formData.name){
+    formName.value = formData.name;
+  }
+  if (formData.email){
+    email.value = formData.email;
+  }
+  if (formData.message){
+    formMessage.value = formData.message;
+  }
+}
+populateForm();
