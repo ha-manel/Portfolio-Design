@@ -71,21 +71,10 @@ const ul = document.createElement('ul');
 ul.className = 'project-languages';
 skillsList.prepend(ul);
 
-function createSkillsList(project, ul){
-  ul.innerHTML = '';
-  project.technologies.forEach((skill) => {
-    const li = document.createElement('li');
-    li.className = 'language';
-    li.innerText = skill;
-    console.log(li.innerText);
-    ul.appendChild(li);
-  })
-}
-
 for (project of projectCards) {
   const projectCard = document.createElement('div');
   projectCard.className = 'project';
-  projectCard.innerHTML = `<img class="project-screenshot" src="${project.image}" alt="screenshot of Tonic project"> <div class="project-div"> <h2 class="project-title">${project.name}</h2> <p class="project-info"> <span class="project-company">CANOPY</span> <span><img src="./images/Counter.png" alt=" "></span> <span class="project-type">Back End Dev</span> <span><img src="./images/Counter.png" alt=" "></span> <span class="project-year">2015</span> </p> <p class="project-description">${project.description}</p> <ul class="project-languages">${createSkillsList(project, document.querySelector('.project-languages'))} </ul> <button class="enabled-btn">See Project</button> </div>`;
+  projectCard.innerHTML = `<img class="project-screenshot" src="${project.image}" alt="screenshot of Tonic project"> <div class="project-div"> <h2 class="project-title">${project.name}</h2> <p class="project-info"> <span class="project-company">CANOPY</span> <span><img src="./images/Counter.png" alt=" "></span> <span class="project-type">Back End Dev</span> <span><img src="./images/Counter.png" alt=" "></span> <span class="project-year">2015</span> </p> <p class="project-description">${project.description}</p> <ul class="project-languages">${project.technologies.map((tech) => `<li class='language'>${tech}</li>`).join('')}</ul> <button class="enabled-btn">See Project</button> </div>`;
   projectsDiv.appendChild(projectCard);
 }
 

@@ -254,6 +254,7 @@ body.active {
   flex-wrap: wrap;
   align-content: space-between;
   display: flex;
+  row-gap: 5px;
   justify-content: space-between;
   list-style-type: none;
   margin: 12px 108px 0 16px;
