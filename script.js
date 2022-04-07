@@ -2,7 +2,6 @@ const hamburger = document.querySelector('#hamburger');
 const navBar = document.querySelector('#mobile-navbar');
 const headline = document.querySelector('#headline');
 const body = document.querySelector('body');
-const projectBtn = document.querySelectorAll('.project .enabled-btn');
 const popupOverlay = document.querySelector('#popup-overlay');
 const closeBtn = document.querySelector('.close-btn');
 const popupHeader = document.querySelector('#popup-content h2');
@@ -17,11 +16,12 @@ const email = document.querySelector('#email');
 const formMessage = document.querySelector('#message');
 const emailErrorMsg = document.querySelector('#email-error-msg');
 const popupBg = document.querySelector('#popup-bg');
+const projectsDiv = document.getElementById('works');
 
 const projectCards = [
   {
     name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: './images/SnapshootPortfolio1.svg',
     technologies: ['html', 'css', 'javaScript', 'github'],
     'live link': 'https://ha-manel.github.io/Microverse-Portfolio/',
@@ -29,7 +29,7 @@ const projectCards = [
   },
   {
     name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: './images/SnapshootPortfolio2.svg',
     technologies: ['html', 'css', 'javaScript', 'ruby'],
     'live link': 'https://ha-manel.github.io/Microverse-Portfolio/',
@@ -37,7 +37,7 @@ const projectCards = [
   },
   {
     name: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: './images/SnapshootPortfolio3.svg',
     technologies: ['html', 'css', 'javaScript'],
     'live link': 'https://ha-manel.github.io/Microverse-Portfolio/',
@@ -45,7 +45,7 @@ const projectCards = [
   },
   {
     name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: './images/SnapshootPortfolio4.svg',
     technologies: ['html', 'css', 'javaScript', 'bootstrap'],
     'live link': 'https://ha-manel.github.io/Microverse-Portfolio/',
@@ -71,6 +71,24 @@ const ul = document.createElement('ul');
 ul.className = 'project-languages';
 skillsList.prepend(ul);
 
+function createSkillsList(project, ul){
+  ul.innerHTML = '';
+  project.technologies.forEach((skill) => {
+    const li = document.createElement('li');
+    li.className = 'language';
+    li.innerText = skill;
+    console.log(li.innerText);
+    ul.appendChild(li);
+  })
+}
+
+for (project of projectCards) {
+  const projectCard = document.createElement('div');
+  projectCard.className = 'project';
+  projectCard.innerHTML = `<img class="project-screenshot" src="${project.image}" alt="screenshot of Tonic project"> <div class="project-div"> <h2 class="project-title">${project.name}</h2> <p class="project-info"> <span class="project-company">CANOPY</span> <span><img src="./images/Counter.png" alt=" "></span> <span class="project-type">Back End Dev</span> <span><img src="./images/Counter.png" alt=" "></span> <span class="project-year">2015</span> </p> <p class="project-description">${project.description}</p> <ul class="project-languages">${createSkillsList(project, document.querySelector('.project-languages'))} </ul> <button class="enabled-btn">See Project</button> </div>`;
+  projectsDiv.appendChild(projectCard);
+}
+
 function populatePopupWindow(index) {
   ul.innerHTML = '';
   popupHeader.innerText = projectCards[index].name;
@@ -86,6 +104,7 @@ function populatePopupWindow(index) {
   sourceLink.href = projectCards[index]['source link'];
 }
 
+const projectBtn = document.querySelectorAll('.project .enabled-btn');
 projectBtn.forEach((btn) => btn.addEventListener('click', () => {
   popupOverlay.classList.add('active');
   body.classList.add('active');
