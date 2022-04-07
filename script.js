@@ -156,3 +156,27 @@ function populateForm () {
   }
 }
 populateForm();
+
+formName.addEventListener('change', () =>{
+  inputData.name = formName.value;
+  inputData.email = email.value;
+  inputData.message = formMessage.value;
+  storage.setItem('formData', JSON.stringify(inputData));
+  console.log(inputData);
+});
+ 
+email.addEventListener('change', () =>{
+  inputData.name = formName.value;
+  inputData.email = email.value;
+  inputData.message = formMessage.value;
+  storage.setItem('formData', JSON.stringify(inputData));
+  console.log(inputData);
+});
+ 
+formMessage.addEventListener('change', () =>{
+  inputData.name = formName.value;
+  inputData.email = email.value;
+  inputData.message = formMessage.value;
+  storage.setItem('formData', JSON.stringify(inputData));
+  console.log(inputData);
+});
