@@ -141,14 +141,16 @@ function retrieveFormData() {
 
 function populateForm() {
   const formData = retrieveFormData();
-  if (formData.name) {
-    formName.value = formData.name;
-  }
-  if (formData.email) {
-    email.value = formData.email;
-  }
-  if (formData.message) {
-    formMessage.value = formData.message;
+  if (formData) {
+    if (formData.name) {
+      formName.value = formData.name;
+    }
+    if (formData.email) {
+      email.value = formData.email;
+    }
+    if (formData.message) {
+      formMessage.value = formData.message;
+    }
   }
 }
 populateForm();
