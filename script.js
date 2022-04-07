@@ -160,7 +160,6 @@ formName.addEventListener('change', () => {
   inputData.email = email.value;
   inputData.message = formMessage.value;
   storage.setItem('formData', JSON.stringify(inputData));
-  console.log(inputData);
 });
 
 email.addEventListener('change', () => {
@@ -168,7 +167,6 @@ email.addEventListener('change', () => {
   inputData.email = email.value;
   inputData.message = formMessage.value;
   storage.setItem('formData', JSON.stringify(inputData));
-  console.log(inputData);
 });
 
 formMessage.addEventListener('change', () => {
@@ -176,5 +174,4 @@ formMessage.addEventListener('change', () => {
   inputData.email = email.value;
   inputData.message = formMessage.value;
   storage.setItem('formData', JSON.stringify(inputData));
-  console.log(inputData);
 });
