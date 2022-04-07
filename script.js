@@ -114,16 +114,16 @@ const inputData = {};
 const storage = window.localStorage;
 
 function storageAvailable(type) {
-  let storage; 
+  let storage;
   try {
     storage = window[type];
-    const x = '__storage_test__'; 
+    const x = '__storage_test__';
     storage.setItem(x, x);
     storage.removeItem(x);
     return true;
   } catch (e) {
     return e instanceof DOMException && (
-      e.code === 22 
+      e.code === 22
       || e.code === 1014
       || e.name === 'QuotaExceededError'
       || e.name === 'NS_ERROR_DOM_QUOTA_REACHED') && (storage && storage.length !== 0);
@@ -136,7 +136,7 @@ function retrieveFormData() {
     const formData = JSON.parse(formDataString);
     return formData;
   }
-  return false; 
+  return false;
 }
 
 function populateForm() {
@@ -162,7 +162,7 @@ formName.addEventListener('change', () => {
   storage.setItem('formData', JSON.stringify(inputData));
   console.log(inputData);
 });
- 
+
 email.addEventListener('change', () => {
   inputData.name = formName.value;
   inputData.email = email.value;
@@ -170,7 +170,7 @@ email.addEventListener('change', () => {
   storage.setItem('formData', JSON.stringify(inputData));
   console.log(inputData);
 });
- 
+
 formMessage.addEventListener('change', () => {
   inputData.name = formName.value;
   inputData.email = email.value;
