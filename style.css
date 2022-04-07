@@ -185,7 +185,6 @@ body.active {
 
 .project {
   width: 327px;
-  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
