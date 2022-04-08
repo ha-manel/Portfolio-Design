@@ -162,6 +162,16 @@ body.active {
   margin-left: 24px;
   padding-left: 0;
   list-style-type: none;
+  animation: width-change 1s ease-in-out 0.5s 1;
+}
+
+@keyframes width-change {
+  from {
+    width: 250px;
+  }
+  to {
+    width: 160px;
+  }
 }
 
 .social-media-link {
