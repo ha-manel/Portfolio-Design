@@ -1,7 +1,10 @@
 const hamburger = document.querySelector('#hamburger');
 const navBar = document.querySelector('#mobile-navbar');
 const headline = document.querySelector('#headline');
+
 const body = document.querySelector('body');
+
+const projectsDiv = document.getElementById('works');
 const popupOverlay = document.querySelector('#popup-overlay');
 const closeBtn = document.querySelector('.close-btn');
 const popupHeader = document.querySelector('#popup-content h2');
@@ -10,13 +13,13 @@ const popupDescription = document.querySelector('#popup-description');
 const liveLink = document.querySelector('.live-link');
 const sourceLink = document.querySelector('.source-link');
 const skillsList = document.querySelector('#popup-skills-buttons');
+const popupBg = document.querySelector('#popup-bg');
+
 const form = document.querySelector('#contact-form');
 const formName = document.querySelector('#name');
 const email = document.querySelector('#email');
 const formMessage = document.querySelector('#message');
 const emailErrorMsg = document.querySelector('#email-error-msg');
-const popupBg = document.querySelector('#popup-bg');
-const projectsDiv = document.getElementById('works');
 
 const projectCards = [
   {
@@ -67,16 +70,16 @@ document.querySelectorAll('.mobile-nav-link').forEach((link) => link.addEventLis
   body.classList.remove('active');
 }));
 
-const ul = document.createElement('ul');
-ul.className = 'project-languages';
-skillsList.prepend(ul);
-
 projectCards.forEach((project) => {
   const projectCard = document.createElement('div');
   projectCard.className = 'project';
   projectCard.innerHTML = `<img class="project-screenshot" src="${project.image}" alt="screenshot of Tonic project"> <div class="project-div"> <h2 class="project-title">${project.name}</h2> <p class="project-info"> <span class="project-company">CANOPY</span> <span><img src="./images/Counter.png" alt=" "></span> <span class="project-type">Back End Dev</span> <span><img src="./images/Counter.png" alt=" "></span> <span class="project-year">2015</span> </p> <p class="project-description">${project.description}</p> <ul class="project-languages">${project.technologies.map((tech) => `<li class='language'>${tech}</li>`).join('')}</ul> <button class="enabled-btn">See Project</button> </div>`;
   projectsDiv.appendChild(projectCard);
 });
+
+const ul = document.createElement('ul');
+ul.className = 'project-languages';
+skillsList.prepend(ul);
 
 function populatePopupWindow(index) {
   ul.innerHTML = '';
@@ -111,7 +114,6 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   if (email.value === email.value.toLowerCase()) {
     form.submit();
-    form.reset();
   } else {
     email.classList.add('active');
     emailErrorMsg.innerText = 'Please enter the e-mail in lowercase';
