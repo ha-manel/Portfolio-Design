@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> This is a Microverse (@microverse) project which aims at recreating a portfolio design using a Figma template.
+> This is a Microverse (@microverseinc) project which aims at recreating a portfolio design using a Figma template.
 
 
 ## Requirements
