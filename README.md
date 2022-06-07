@@ -2,27 +2,25 @@
 
 # Portfolio
 
-> This is a Microverse (@microverseinc) project which aims at recreating a portfolio design using a Figma template.
+> A portfolio website created using a Figma design.
 
 
 ## Requirements
 
-Build a portfolio page by implementing a [Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1) template, using:
-- HTML5 and CSS3 along with best practices.
-- Linters (Lighthouse, Webhint, Stylelint, Eslint).
-- CSS3 media queries for the desktop version.
-- JavaScript.
+Build a portfolio page by implementing a [Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1) design, and:
+- Using HTML5, CSS3, and JavaScript.
+- Respecting Linters (Lighthouse, Webhint, Stylelint, Eslint).
+- Implementing Responsivity.
 
 ## Built With
 
 - HTML5
 - CSS3
 - JavaScript
-- Linters (Lighthouse, Webhint, Stylelint, Eslint)
 
 ## Live Demo
 
-Check **Live Demo** [here.](https://ha-manel.github.io/Microverse-Portfolio/)
+Check **Live Demo** [here.](https://ha-manel.github.io/Portfolio-Design/)
 
 ## Getting Started
 
